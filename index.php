@@ -18,7 +18,7 @@
                 <form action='processPDF.php' method='post'>
                       <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="name" class="form-control" id="name" placeholder="Enter Chines Text">
+                        <input name="name" type="name" class="form-control" id="name" placeholder="Enter Chines Text">
                       </div>
                       <div class="form-group">
                         <input  class="btn btn-default" type='submit' name='submit' value='Save to PDF'>
