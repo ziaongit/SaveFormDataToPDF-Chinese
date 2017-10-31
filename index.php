@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4">
+    <div class="container col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-8 col-lg-offset-4 col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h1>Save Chines Form Data To PDF</h1>
@@ -16,16 +16,13 @@
             <div class="panel-body">
               <div class="row">
                 <form action='processPDF.php' method='post'>
-                  <div class="col-md-12">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                      <input name="name" type="text" id="name">
-                      <label for="name">Name</label>
-                    </div
-                    <div class="col-md-3">
-                      <input  class="btn btn-default" type='submit' name='submit' value='Save to PDF'>
-                    </div>
-                  </div>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter Chines Text">
+                      </div>
+                      <div class="form-group">
+                        <input  class="btn btn-default" type='submit' name='submit' value='Save to PDF'>
+                      </div>
                 </form>
               </div>
             </div>

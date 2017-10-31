@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=UTF-8');
 if(isset($_POST['submit'])){
 
 /*
@@ -42,7 +43,7 @@ SAVE FORM DATA AS PDF START HERE
         $mpdf->WriteHTML($body);
 
         //output pdf
-        $mpdf->Output('Akutjornal-enligt-RETTS-TM.pdf','D');
+        $mpdf->Output('SaveToPDF.pdf','D');
         //save to server
         //$mpdf->Output("mydata.pdf",'F');
     }
