@@ -9,27 +9,29 @@
 </head>
 <body>
     <div class="container col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4">
-        <br />
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h1>Save Chines Form Data To PDF</h1>
             </div>
             <div class="panel-body">
+              <div class="row">
                 <form action='processPDF.php' method='post'>
-                    <div class="form-group">
-                        <div class="input-group">
-                          <label for="name">Name</label>
-                          <input name="name" id="name" type="text" class="form-control" />
-                        </div>
+                  <div class="col-md-12">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                      <input name="name" type="text" id="name">
+                      <label for="name">Name</label>
+                    </div
+                    <div class="col-md-3">
+                      <input  class="btn btn-default" type='submit' name='submit' value='Save to PDF'>
                     </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="submit" class="btn btn-default" value="Save Form Data to PDF">
-                        </div>
-                    </div>
+                  </div>
                 </form>
+              </div>
             </div>
         </div>
+
+      </div>
     </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
