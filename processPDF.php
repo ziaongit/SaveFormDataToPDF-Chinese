@@ -33,7 +33,9 @@ SAVE FORM DATA AS PDF START HERE
         $body = iconv('UTF-8', 'UTF-8//TRANSLIT', $body);
 
         include("mpdf/mpdf.php");
-        $mpdf=new \mPDF('c','A4','','' , 0, 0, 0, 0, 0, 0);
+
+        $mpdf=new \mPDF('+aCJK','A4','','' , 0, 0, 0, 0, 0, 0);
+        
         $mpdf->SetAutoFont();
         $mpdf->autoScriptToLang = true;
         $mpdf->autoLangToFont   = true;
